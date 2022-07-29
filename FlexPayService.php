@@ -24,7 +24,7 @@ class FlexPayService
      * @param string $callbackUrl
      * @param float $commission = 0
      */
-    public function C2B(string $phoneNumber, float $amount, string $currency, string $callbackUrl, float $commission = 0)
+    public function c2b(string $phoneNumber, float $amount, string $currency, string $callbackUrl, float $commission = 0)
     {
         $result = $this->init(
             self::URL_C2B,
@@ -57,7 +57,7 @@ class FlexPayService
      * @param string $callbackUrl
      * @param float $commission = 0
      */
-    public function B2C(string $phoneNumber, float $amount, string $currency, string $callbackUrl, float $commission = 0)
+    public function b2c(string $phoneNumber, float $amount, string $currency, string $callbackUrl, float $commission = 0)
     {
         $result = $this->init(
             self::URL_B2C,
@@ -81,7 +81,7 @@ class FlexPayService
      *
      * @param string $orderNumber
      */
-    public function CHECK_TRANSACTION(string $orderNumber)
+    public function checkTransaction(string $orderNumber)
     {
         $result = $this->init(self::URL_CHECK_TRANSACTION . '/' . $orderNumber, [], 'GET');
 
