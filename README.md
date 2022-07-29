@@ -6,10 +6,10 @@ FlexPay integration for PHP (https://www.flexpay.cd)
     // A request is sent to the callback URL to give the status of the transaction
     public function payC2B() {
       $flexPayService->C2B(
-          '243972436105',
-          '100',
-          'CDF',
-          'www.flexpay.cd',
+          '243972436105', //phoneNumber
+          '100', //amount
+          'CDF', //currency
+          'www.flexpay.cd', //callbackUrl
           1
       );
     }
@@ -20,10 +20,10 @@ FlexPay integration for PHP (https://www.flexpay.cd)
      */
     public function payB2C() {
       $flexPayService->B2C(
-          '243972436105',
-          '100',
-          'USD',
-          'www.flexpay.cd',
+          '243972436105', //phoneNumber
+          '100', //amount
+          'USD', //currency
+          'www.flexpay.cd', //callbackUrl
           1
       );
     }
