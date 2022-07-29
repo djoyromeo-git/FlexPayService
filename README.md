@@ -10,7 +10,7 @@ FlexPay integration for PHP (https://www.flexpay.cd)
           '100', //amount
           'CDF', //currency
           'www.flexpay.cd', //callbackUrl
-          1
+          1 //commission
       );
     }
 
@@ -24,7 +24,7 @@ FlexPay integration for PHP (https://www.flexpay.cd)
           '100', //amount
           'USD', //currency
           'www.flexpay.cd', //callbackUrl
-          1
+          1 //commission
       );
     }
     
