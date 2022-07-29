@@ -39,7 +39,8 @@ class FlexPayService
             ]
         );
 
-        var_dump($result);
+        //var_dump($result);
+        return $result;
     }
 
     public function calcAmount(float $amount, float $commission = 0)
