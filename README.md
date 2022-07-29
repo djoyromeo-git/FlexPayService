@@ -9,7 +9,7 @@ class TestController {
     $flexPayService = new FlexPayService();
     
     // A request is sent to the callback URL to give the status of the transaction
-    $flexPayService->C2B(
+    $flexPayService->c2b(
           '243972436105', //phoneNumber
           '100', //amount
           'CDF', //currency
@@ -21,7 +21,7 @@ class TestController {
      * This interface allows a merchant to send electronic money from their account to a phone number
      * that has a mobile money account.
      */
-    $flexPayService->B2C(
+    $flexPayService->b2c(
           '243972436105', //phoneNumber
           '100', //amount
           'USD', //currency
@@ -30,7 +30,7 @@ class TestController {
      );
     
     // This interface allows you to check the status of a payment request sent to FlexPay
-    $flexPayService->CHECK_TRANSACTION('RVIdaytKD335243972436105');
+    $flexPayService->checkTransaction('RVIdaytKD335243972436105');
 }
 ?>
 ```
